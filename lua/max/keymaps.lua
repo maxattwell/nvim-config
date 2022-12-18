@@ -30,6 +30,9 @@ keymap("n", "<C-k>", "<C-u>zz", opts)
 -- Fast macro
 keymap("n", "Q", "@q", opts)
 
+-- Shortcuts
+keymap("n", "<leader>gg", ":LazyGit <cr>", opts)
+
 -- ======== INSERT ========================
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
