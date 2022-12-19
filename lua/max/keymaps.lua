@@ -32,6 +32,7 @@ keymap("n", "Q", "@q", opts)
 
 -- Shortcuts
 keymap("n", "<leader>gg", ":LazyGit <cr>", opts)
+keymap("n", "<leader><tab>", ":Lex 20 <cr>", opts)
 
 -- ======== INSERT ========================
 -- Press jk fast to enter

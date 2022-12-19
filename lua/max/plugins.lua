@@ -51,6 +51,14 @@ return packer.startup(function(use)
   -- lazygit
   use "kdheepak/lazygit.nvim"
 
+  -- treesitter
+  use "nvim-treesitter/nvim-treesitter"
+
+  -- toggleterm
+	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+	  require("toggleterm").setup()
+	end}
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
