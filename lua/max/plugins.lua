@@ -44,20 +44,28 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+  use "morhetz/gruvbox"         -- Colorshceme
+  use "kdheepak/lazygit.nvim"    -- lazygit
+  use "nvim-treesitter/nvim-treesitter"  -- treesitter
 
-  -- Colorshceme
-  use "morhetz/gruvbox"
-
-  -- lazygit
-  use "kdheepak/lazygit.nvim"
-
-  -- treesitter
-  use "nvim-treesitter/nvim-treesitter"
-
+  -- nvim-tree
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
   -- toggleterm
-	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-	  require("toggleterm").setup()
-	end}
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+    require("toggleterm").setup()
+  end}
+
+  --telescope
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

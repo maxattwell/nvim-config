@@ -30,9 +30,6 @@ keymap("n", "<C-k>", "<C-u>zz", opts)
 -- Fast macro
 keymap("n", "Q", "@q", opts)
 
--- Shortcuts
-keymap("n", "<leader>gg", ":LazyGit <cr>", opts)
-keymap("n", "<leader><tab>", ":Lex 20 <cr>", opts)
 
 -- ======== INSERT ========================
 -- Press jk fast to enter
@@ -43,3 +40,9 @@ keymap("i", "kj", "<ESC>", opts)
 -- Better vertical navigation
 keymap("v", "<C-j>", "<C-d>zz", opts)
 keymap("v", "<C-k>", "<C-u>zz", opts)
+
+-- ==== PLUGIN SHORTCUTS ==================
+keymap("n", "<leader>g","<cmd>LazyGit<cr>", opts) --lazygit
+keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts) --NvimTree
+keymap("n", "<leader>t", "<cmd>ToggleTerm size=10 direction=horizontal<cr>", opts) --ToggleTerm
+keymap("n", "<C-p>", "<cmd>Telescope find_files<cr>", opts) --NvimTree

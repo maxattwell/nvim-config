@@ -10,6 +10,10 @@ local options = {
   cursorline = true,             -- highlight cursor line
   signcolumn = "yes",            -- always show sign column on left
   scrolloff = 8,                 -- keep cursor 8 lines  above bottom
+  shiftwidth = 2,                -- space width for each indentation
+  smartindent = true,            -- make indenting smarter again
+  splitbelow = true,             -- splits to go below current window
+  splitright = true,             -- splits to go to the right of current window
 }
 
 for k, v in pairs(options) do 
