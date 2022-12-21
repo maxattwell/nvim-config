@@ -1,0 +1,8 @@
+require "max.options"
+require "max.keymaps"
+require "max.plugins"
+require "max.colorscheme"
+require "max.ntree"
+require "max.toggleterm"
+require "max.treesitter"
+require "max.lualine"
