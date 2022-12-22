@@ -42,10 +42,16 @@ keymap("v", "<C-j>", "<C-d>zz", opts)
 keymap("v", "<C-k>", "<C-u>zz", opts)
 
 -- ==== PLUGIN SHORTCUTS ==================
+-- Packer
 keymap("n", "<leader>ps","<cmd>PackerSync<cr>", opts) --PackerSync
 keymap("n", "<leader>pi","<cmd>PackerInstall<cr>", opts) --PackerInstall
 keymap("n", "<leader>pc","<cmd>PackerClean<cr>", opts) --PackerClean
+-- Lazygit
 keymap("n", "<leader>g","<cmd>LazyGit<cr>", opts) --lazygit
+-- NvimTree
 keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts) --NvimTree
-keymap("n", "<C-p>", "<cmd>Telescope find_files<cr>", opts) --NvimTree
-keymap("n", "<leader>t", "<cmd>ToggleTerm size=10 direction=horizontal<cr>", opts) --ToggleTerm
+-- Telescope
+keymap("n", "<C-p>", "<cmd>Telescope find_files<cr>", opts)
+-- ToggleTerm
+keymap("n", "<leader>th", "<cmd>ToggleTerm size=10 direction=horizontal<cr>", opts) --ToggleTerm
+keymap("n", "<leader>tf", "<cmd>ToggleTerm  direction=float<cr>", opts) --ToggleTerm
