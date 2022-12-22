@@ -55,3 +55,4 @@ keymap("n", "<C-p>", "<cmd>Telescope find_files<cr>", opts)
 -- ToggleTerm
 keymap("n", "<leader>th", "<cmd>ToggleTerm size=10 direction=horizontal<cr>", opts) --ToggleTerm
 keymap("n", "<leader>tf", "<cmd>ToggleTerm  direction=float<cr>", opts) --ToggleTerm
+keymap("n", "<leader>tt", "<cmd>ToggleTerm  direction=float<cr>", opts) --ToggleTerm
