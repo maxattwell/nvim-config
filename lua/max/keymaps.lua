@@ -51,8 +51,9 @@ keymap("n", "<leader>g","<cmd>LazyGit<cr>", opts) --lazygit
 -- NvimTree
 keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts) --NvimTree
 -- Telescope
-keymap("n", "<C-p>", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<leader>ff", "<cmd>Telescope find_files theme=dropdown<cr>", opts)
+keymap("n", "<leader>fg", "<cmd>Telescope live_grep theme=dropdown<cr>", opts)
+keymap("n", "<leader>fb", "<cmd>Telescope buffers theme=dropdown<cr>", opts)
 -- ToggleTerm
-keymap("n", "<leader>th", "<cmd>ToggleTerm size=10 direction=horizontal<cr>", opts) --ToggleTerm
+keymap("n", "<leader>th", "<cmd>ToggleTerm direction=horizontal<cr>", opts) --ToggleTerm
 keymap("n", "<leader>tf", "<cmd>ToggleTerm  direction=float<cr>", opts) --ToggleTerm
-keymap("n", "<leader>tt", "<cmd>ToggleTerm  direction=float<cr>", opts) --ToggleTerm

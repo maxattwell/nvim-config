@@ -1,18 +1,21 @@
--- examples for your init.lua
-
 -- disable netrw at the very start of your init.lua (strongly advised)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+local status_ok, nvim-tree = pcall(require, "nvim-tree")
+if not status_ok then
+	return
+end
+
 -- OR setup with some options
-require("nvim-tree").setup({
+nvim-tree.setup({
   sort_by = "case_sensitive",
   view = {
     adaptive_size = true,
     mappings = {
       list = {
-	-- TODO add shortcuts to add files and make directories
         { key = "u", action = "dir_up" },
+        { key = "v", action = "vsplit" },
       },
     },
   },

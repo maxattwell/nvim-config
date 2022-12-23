@@ -1,12 +1,17 @@
-
-local status_ok, configs = pcall(require, "telescope.configs")
+local status_ok, telescope = pcall(require, "telescope")
 if not status_ok then
 	return
 end
 
---configs.setup({
---})
+local actions = require "telescope.actions"
 
-local builtin = require('telescope.builtin')
-local themes = require('telescope.themes')
-builtin.find_files(themes.get_dropdown())
+telescope.setup({
+  defaults = {
+    mappings = {
+      n = {
+	["q"] = actions.close,
+      }
+    }
+  }
+})
+

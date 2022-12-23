@@ -1,6 +1,6 @@
 local options = {
   clipboard = "unnamedplus",     -- Sys clipboard
-  cmdheight = 2,                 -- cmd line height
+  cmdheight = 1,                 -- cmd line height
   fileencoding = "utf-8",        -- encoding written to a file
   hlsearch = true,
   smartindent = true,
