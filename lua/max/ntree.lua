@@ -2,13 +2,13 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-local status_ok, nvim-tree = pcall(require, "nvim-tree")
+local status_ok, nvim_tree = pcall(require, "nvim-tree")
 if not status_ok then
 	return
 end
 
 -- OR setup with some options
-nvim-tree.setup({
+nvim_tree.setup({
   sort_by = "case_sensitive",
   view = {
     adaptive_size = true,

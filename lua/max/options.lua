@@ -14,6 +14,7 @@ local options = {
   smartindent = true,            -- make indenting smarter again
   splitbelow = true,             -- splits to go below current window
   splitright = true,             -- splits to go to the right of current window
+  timeoutlen = 500,
 }
 
 for k, v in pairs(options) do 

@@ -76,20 +76,32 @@ return packer.startup(function(use)
     },
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
+  
   -- ToggleTerm
-  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+  use {
+    "akinsho/toggleterm.nvim", tag = '*', config = function()
     require("toggleterm").setup()
-  end}
+  end
+  }
 
-  --Telescope
+  -- Telescope
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- WhichKey
+ use {
+    'folke/which-key.nvim',
+    config = function()
+      require("which-key").setup()
+    end
+  }
+  
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end
 end)
+

@@ -6,7 +6,6 @@ local term_opts = { silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 --Remap space as leader key
-keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
@@ -32,7 +31,7 @@ keymap("n", "Q", "@q", opts)
 
 
 -- ======== INSERT ========================
--- Press jk together to enter insert mode
+-- Press jk together to exit insert mode
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
 
@@ -42,18 +41,5 @@ keymap("v", "<C-j>", "<C-d>zz", opts)
 keymap("v", "<C-k>", "<C-u>zz", opts)
 
 -- ==== PLUGIN SHORTCUTS ==================
--- Packer
-keymap("n", "<leader>ps","<cmd>PackerSync<cr>", opts) --PackerSync
-keymap("n", "<leader>pi","<cmd>PackerInstall<cr>", opts) --PackerInstall
-keymap("n", "<leader>pc","<cmd>PackerClean<cr>", opts) --PackerClean
--- Lazygit
 keymap("n", "<leader>g","<cmd>LazyGit<cr>", opts) --lazygit
--- NvimTree
 keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts) --NvimTree
--- Telescope
-keymap("n", "<leader>ff", "<cmd>Telescope find_files theme=dropdown<cr>", opts)
-keymap("n", "<leader>fg", "<cmd>Telescope live_grep theme=dropdown<cr>", opts)
-keymap("n", "<leader>fb", "<cmd>Telescope buffers theme=dropdown<cr>", opts)
--- ToggleTerm
-keymap("n", "<leader>th", "<cmd>ToggleTerm direction=horizontal<cr>", opts) --ToggleTerm
-keymap("n", "<leader>tf", "<cmd>ToggleTerm  direction=float<cr>", opts) --ToggleTerm
