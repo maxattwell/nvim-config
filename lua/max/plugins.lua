@@ -97,6 +97,15 @@ return packer.startup(function(use)
       require("which-key").setup()
     end
   }
+
+  -- Alpha (start screen)
+ use {
+    'goolord/alpha-nvim',
+    config = function()
+      require'alpha'.setup(require'alpha.themes.dashboard'.config)
+    end
+  }
+  
   
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
