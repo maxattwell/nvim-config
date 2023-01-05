@@ -63,9 +63,9 @@ return packer.startup(function(use)
   -- Gitsigns
   use {
     'lewis6991/gitsigns.nvim',
-    config = function()
-      require('gitsigns').setup()
-    end
+    -- config = function()
+      -- require('gitsigns').setup()
+    -- end
   }
 
   -- NvimTree
@@ -79,31 +79,34 @@ return packer.startup(function(use)
   
   -- ToggleTerm
   use {
-    "akinsho/toggleterm.nvim", tag = '*', config = function()
-    require("toggleterm").setup()
-  end
+    "akinsho/toggleterm.nvim", tag = '*', 
+    -- config = function()
+    -- require("toggleterm").setup()
+  -- end
   }
 
   -- Telescope
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    -- requires = { {'nvim-lua/plenary.nvim'} }
   }
+
+  use { 'ahmedkhalf/project.nvim' }
 
   -- WhichKey
  use {
     'folke/which-key.nvim',
-    config = function()
-      require("which-key").setup()
-    end
+    -- config = function()
+      -- require("which-key").setup()
+    -- end
   }
 
   -- Alpha (start screen)
  use {
     'goolord/alpha-nvim',
-    config = function()
-      require'alpha'.setup(require'alpha.themes.dashboard'.config)
-    end
+    -- config = function()
+      -- require'alpha'.setup(require'alpha.themes.dashboard'.config)
+    -- end
   }
   
   
