@@ -52,21 +52,16 @@ return packer.startup(function(use)
     end,
   }
   -- Colorshceme
-  use "morhetz/gruvbox"         
+  use { "morhetz/gruvbox", }         
   -- Lazygit
-  use "kdheepak/lazygit.nvim"    
+  use { "kdheepak/lazygit.nvim", }    
   -- LuaLine
   use {				
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
   -- Gitsigns
-  use {
-    'lewis6991/gitsigns.nvim',
-    -- config = function()
-      -- require('gitsigns').setup()
-    -- end
-  }
+  use { 'lewis6991/gitsigns.nvim', }
 
   -- NvimTree
   use {
@@ -78,37 +73,18 @@ return packer.startup(function(use)
   }
   
   -- ToggleTerm
-  use {
-    "akinsho/toggleterm.nvim", tag = '*', 
-    -- config = function()
-    -- require("toggleterm").setup()
-  -- end
-  }
+  use { "akinsho/toggleterm.nvim", tag = '*', }
 
   -- Telescope
-  use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.0',
-    -- requires = { {'nvim-lua/plenary.nvim'} }
-  }
-
-  use { 'ahmedkhalf/project.nvim' }
+  use { 'nvim-telescope/telescope.nvim', tag = '0.1.0', }
 
   -- WhichKey
- use {
-    'folke/which-key.nvim',
-    -- config = function()
-      -- require("which-key").setup()
-    -- end
-  }
+ use { 'folke/which-key.nvim', }
 
   -- Alpha (start screen)
- use {
-    'goolord/alpha-nvim',
-    -- config = function()
-      -- require'alpha'.setup(require'alpha.themes.dashboard'.config)
-    -- end
-  }
+ use { 'goolord/alpha-nvim', }
   
+  use { 'ahmedkhalf/project.nvim' }
   
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

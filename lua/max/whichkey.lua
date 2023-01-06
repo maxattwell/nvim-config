@@ -20,9 +20,9 @@ whichkey.register({
   },
   p = {
     name = "Packer",
-    s = {"<cmd>PackerSync<cr>"},
-    i = {"<cmd>PackerInstall<cr>"},
-    c = {"<cmd>PackerClean<cr>"},
+    s = {"<cmd>PackerSync<cr>", "Sync"},
+    i = {"<cmd>PackerInstall<cr>", "Install"},
+    c = {"<cmd>PackerClean<cr>", "Clean"},
   },
 }
   , { prefix = "<leader>" })
