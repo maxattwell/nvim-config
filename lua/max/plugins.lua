@@ -84,7 +84,14 @@ return packer.startup(function(use)
   -- Alpha (start screen)
  use { 'goolord/alpha-nvim', }
   
+  -- Project
   use { 'ahmedkhalf/project.nvim' }
+  
+  -- Autopairs
+  use { 
+    'windwp/nvim-autopairs',
+    config = function() require("nvim-autopairs").setup {} end
+  }
   
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
