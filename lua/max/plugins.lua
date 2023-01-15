@@ -100,6 +100,12 @@ return packer.startup(function(use)
       end
   } 
 
+  -- dadbod (databases)
+  use { 'tpope/vim-dadbod' }
+  
+  -- dadbod-ui (databases)
+  use { 'kristijanhusak/vim-dadbod-ui' }
+  
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
