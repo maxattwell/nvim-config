@@ -106,6 +106,9 @@ return packer.startup(function(use)
   -- dadbod-ui (databases)
   use { 'kristijanhusak/vim-dadbod-ui' }
   
+  -- ALE (asyncoronous linting engine)
+  use { 'dense-analysis/ale' }
+  
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
