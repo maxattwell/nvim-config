@@ -43,3 +43,5 @@ keymap("v", "<C-k>", "<C-u>zz", opts)
 -- ==== PLUGIN SHORTCUTS ==================
 keymap("n", "<leader>g","<cmd>LazyGit<cr>", opts) --lazygit
 keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts) --NvimTree
+
+keymap("n", "<leader>r", "<Plug>RestNvim", opts)
