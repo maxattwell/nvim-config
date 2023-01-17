@@ -51,15 +51,21 @@ return packer.startup(function(use)
       ts_update()
     end,
   }
-  -- Colorshceme
-  use { "morhetz/gruvbox", }         
+  -- Colorscheme
+  -- use { "morhetz/gruvbox", }         
+  use { "ellisonleao/gruvbox.nvim", }         
+  use { "lunarvim/darkplus.nvim", }         
+  
   -- Lazygit
   use { "kdheepak/lazygit.nvim", }    
+
   -- LuaLine
   use {				
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
+  use { "kyazdani42/nvim-web-devicons", }    
+
   -- Gitsigns
   use { 'lewis6991/gitsigns.nvim', }
 

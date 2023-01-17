@@ -1,4 +1,6 @@
-local colorscheme = "gruvbox"
+local colorscheme = "darkplus"
+
+-- vim.o.background = "light" -- or "light" for light mode for gruvbox
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
@@ -7,5 +9,5 @@ if not status_ok then
 end
 
 -- Remove background color
-vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 --vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })

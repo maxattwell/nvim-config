@@ -42,5 +42,10 @@ whichkey.register({
     H = {"<c-w>H", "Move to Left"},
     L = {"<c-w>L", "Move to Right"},
   },
+  c = {
+    name = "Color Scheme",
+    g = {"<cmd>colorscheme gruvbox<cr>", "Gruvbox"},
+    d = {"<cmd>colorscheme darkplus<cr>", "Darkplus"},
+  },
 }
   , { prefix = "<leader>" })
