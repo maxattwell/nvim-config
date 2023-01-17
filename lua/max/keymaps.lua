@@ -18,10 +18,6 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 -- ======== NORMAL ========================
--- Better window navigation
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-l>", "<C-w>l", opts)
-
 -- Better vertical navigation
 keymap("n", "<C-j>", "<C-d>zz", opts)
 keymap("n", "<C-k>", "<C-u>zz", opts)
@@ -44,4 +40,3 @@ keymap("v", "<C-k>", "<C-u>zz", opts)
 keymap("n", "<leader>g","<cmd>LazyGit<cr>", opts) --lazygit
 keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts) --NvimTree
 
-keymap("n", "<leader>r", "<Plug>RestNvim", opts)
