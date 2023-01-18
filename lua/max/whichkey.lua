@@ -31,6 +31,11 @@ whichkey.register({
     p = {"<Plug>RestNvimPreview", "Preview Request"},
     l = {"<Plug>RestNvimLast", "Rerun last Request"},
   },
+  d = {
+    name = "Dadbod",
+    d = {"<cmd>DB<cr>", "Dadbod"},
+    u = {"<cmd>DBUI<cr>", "DadbodUI"},
+  },
   w = {
     name = "Windows",
     j = {"<c-w>j", "Navigate Down"},
