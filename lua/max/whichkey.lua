@@ -33,7 +33,7 @@ whichkey.register({
   },
   d = {
     name = "Dadbod",
-    d = {"<cmd>DB<cr>", "Dadbod"},
+    d = {"<cmd>tab DBUI<cr>", "Tab DadbodUI"},
     u = {"<cmd>DBUI<cr>", "DadbodUI"},
   },
   w = {
