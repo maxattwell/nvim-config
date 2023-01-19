@@ -36,17 +36,7 @@ whichkey.register({
     d = {"<cmd>tab DBUI<cr>", "Tab DadbodUI"},
     u = {"<cmd>DBUI<cr>", "DadbodUI"},
   },
-  w = {
-    name = "Windows",
-    j = {"<c-w>j", "Navigate Down"},
-    k = {"<c-w>k", "Navigate Up"},
-    h = {"<c-w>h", "Navigate Left"},
-    l = {"<c-w>l", "Navigate Right"},
-    J = {"<c-w>J", "Move to Bottom"},
-    K = {"<c-w>K", "Move to Top"},
-    H = {"<c-w>H", "Move to Left"},
-    L = {"<c-w>L", "Move to Right"},
-  },
+  w = { "<c-w>", "Windows" },
   c = {
     name = "Color Scheme",
     g = {"<cmd>colorscheme gruvbox<cr>", "Gruvbox"},
