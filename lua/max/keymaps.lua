@@ -35,8 +35,3 @@ keymap("i", "kj", "<ESC>", opts)
 -- Better vertical navigation
 keymap("v", "<C-j>", "<C-d>zz", opts)
 keymap("v", "<C-k>", "<C-u>zz", opts)
-
--- ==== PLUGIN SHORTCUTS ==================
-keymap("n", "<leader>g","<cmd>LazyGit<cr>", opts) --lazygit
-keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts) --NvimTree
-

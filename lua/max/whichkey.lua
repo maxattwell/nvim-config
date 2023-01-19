@@ -7,6 +7,9 @@ whichkey.setup({
 })
 
 whichkey.register({
+  w = { "<c-w>", "Windows" },
+  g = {"<cmd>LazyGit<cr>", "Git" },
+  e = {"<cmd>NvimTreeFindFileToggle<cr>", "Explorer" },
   f = {
     name = "Finder",
     f = {"<cmd>Telescope find_files theme=dropdown<cr>", "Find File" },
@@ -36,7 +39,6 @@ whichkey.register({
     d = {"<cmd>tab DBUI<cr>", "Tab DadbodUI"},
     u = {"<cmd>DBUI<cr>", "DadbodUI"},
   },
-  w = { "<c-w>", "Windows" },
   c = {
     name = "Color Scheme",
     g = {"<cmd>colorscheme gruvbox<cr>", "Gruvbox"},
