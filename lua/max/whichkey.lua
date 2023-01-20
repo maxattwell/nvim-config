@@ -3,6 +3,10 @@ if not status_ok then
 	return
 end
 
+function removeBackground()
+  vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+end
+
 function toggleDarkMode()
   if (vim.o.background == "light")
   then
@@ -55,6 +59,7 @@ whichkey.register({
     d = {"<cmd>colorscheme darkplus<cr>", "Darkplus"},
     c = {"<cmd>colorscheme catppuccin<cr>", "Catppuccin"},
     t = {toggleDarkMode, "Toggle Dark Mode"},
+    b = {removeBackground, "Remove background"},
   },
 }
   , { prefix = "<leader>" })
