@@ -3,6 +3,16 @@ if not status_ok then
 	return
 end
 
+function toggleDarkMode()
+  if (vim.o.background == "light")
+  then
+    vim.cmd("set background=dark")
+  else
+    vim.cmd("set background=light")
+  end
+end
+
+
 whichkey.setup({
 })
 
@@ -43,6 +53,8 @@ whichkey.register({
     name = "Color Scheme",
     g = {"<cmd>colorscheme gruvbox<cr>", "Gruvbox"},
     d = {"<cmd>colorscheme darkplus<cr>", "Darkplus"},
+    c = {"<cmd>colorscheme catppuccin<cr>", "Catppuccin"},
+    t = {toggleDarkMode, "Toggle Dark Mode"},
   },
 }
   , { prefix = "<leader>" })

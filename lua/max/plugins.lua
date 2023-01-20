@@ -55,6 +55,7 @@ return packer.startup(function(use)
   -- use { "morhetz/gruvbox", }         
   use { "ellisonleao/gruvbox.nvim", }         
   use { "lunarvim/darkplus.nvim", }         
+  use { "catppuccin/nvim", as = "catppuccin" }
   
   -- Lazygit
   use { "kdheepak/lazygit.nvim", }    
