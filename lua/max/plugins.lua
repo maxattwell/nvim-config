@@ -27,12 +27,13 @@ require("lazy").setup({
  "folke/which-key.nvim",
  "goolord/alpha-nvim",
  "ahmedkhalf/project.nvim", 
- "windwp/nvim-autopairs",
+{ 
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  },
 {
       "numToStr/Comment.nvim",
-      config = function()
-	  require('Comment').setup()
-      end
+      config = function() require('Comment').setup() end
   },
  "tpope/vim-dadbod", 
  "kristijanhusak/vim-dadbod-ui", 
