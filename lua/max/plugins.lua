@@ -118,6 +118,7 @@ return packer.startup(function(use)
   
   -- rest (wrapper for sending http requests through curl)
   use { "rest-nvim/rest.nvim" }
+  use { "dstein64/vim-startuptime"}
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
