@@ -62,59 +62,59 @@ return packer.startup(function(use)
 
   -- LuaLine
   use {				
-    'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    "nvim-lualine/lualine.nvim",
+    requires = { "kyazdani42/nvim-web-devicons", opt = true }
   }
   use { "kyazdani42/nvim-web-devicons", }    
 
   -- Gitsigns
-  use { 'lewis6991/gitsigns.nvim', }
+  use { "lewis6991/gitsigns.nvim", }
 
   -- NvimTree
   use {
-    'nvim-tree/nvim-tree.lua',
+    "nvim-tree/nvim-tree.lua",
     requires = {
-      'nvim-tree/nvim-web-devicons', -- for file icons
+      "nvim-tree/nvim-web-devicons", -- for file icons
     },
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
   
   -- ToggleTerm
-  use { "akinsho/toggleterm.nvim", tag = '*', }
+  use { "akinsho/toggleterm.nvim", tag = "*", }
 
   -- Telescope
-  use { 'nvim-telescope/telescope.nvim', tag = '0.1.0', }
+  use { "nvim-telescope/telescope.nvim", tag = "0.1.0", }
 
   -- WhichKey
- use { 'folke/which-key.nvim', }
+ use { "folke/which-key.nvim", }
 
   -- Alpha (start screen)
- use { 'goolord/alpha-nvim', }
+ use { "goolord/alpha-nvim", }
   
   -- Project
-  use { 'ahmedkhalf/project.nvim' }
+  use { "ahmedkhalf/project.nvim" }
   
   -- Autopairs
   use { 
-    'windwp/nvim-autopairs',
+    "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
   }
   -- Commenter
    use {
-      'numToStr/Comment.nvim',
+      "numToStr/Comment.nvim",
       config = function()
 	  require('Comment').setup()
       end
   } 
 
   -- dadbod (databases)
-  use { 'tpope/vim-dadbod' }
+  use { "tpope/vim-dadbod" }
   
   -- dadbod-ui (databases)
-  use { 'kristijanhusak/vim-dadbod-ui' }
+  use { "kristijanhusak/vim-dadbod-ui" }
   
   -- ALE (asyncoronous linting engine)
-  use { 'dense-analysis/ale' }
+  use { "dense-analysis/ale" }
   
   -- rest (wrapper for sending http requests through curl)
   use { "rest-nvim/rest.nvim" }
@@ -126,3 +126,39 @@ return packer.startup(function(use)
   end
 end)
 
+--local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+--if not vim.loop.fs_stat(lazypath) then
+--  vim.fn.system({
+--    "git",
+--    "clone",
+--    "--filter=blob:none",
+--    "https://github.com/folke/lazy.nvim.git",
+--    "--branch=stable", -- latest stable release
+--    lazypath,
+--  })
+--end
+--vim.opt.rtp:prepend(lazypath)
+--
+--require("lazy").setup({
+--  "nvim-lua/plenary.nvim", 
+--  "morhetz/gruvbox",
+--  "ellisonleao/gruvbox.nvim",
+--  "lunarvim/darkplus.nvim",
+--  "catppuccin/nvim",
+--  "kdheepak/lazygit.nvim",
+--  "nvim-lualine/lualine.nvim",
+--  "lewis6991/gitsigns.nvim",
+--  "nvim-tree/nvim-tree.lua",
+--  "nvim-tree/nvim-web-devicons",
+--  "akinsho/toggleterm.nvim",
+--  "nvim-telescope/telescope.nvim",
+--  "folke/which-key.nvim",
+--  "goolord/alpha-nvim",
+--  "ahmedkhalf/project.nvim", 
+--  "windwp/nvim-autopairs",
+--  "numToStr/Comment.nvim",
+--  "tpope/vim-dadbod", 
+--  "kristijanhusak/vim-dadbod-ui", 
+--  "dense-analysis/ale", 
+--  "rest-nvim/rest.nvim", 
+--}, opts)
