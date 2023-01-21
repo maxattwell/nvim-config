@@ -17,6 +17,13 @@ require("lazy").setup({
  "ellisonleao/gruvbox.nvim",
  "lunarvim/darkplus.nvim",
  "catppuccin/nvim",
+{ 
+    "nvim-treesitter/nvim-treesitter",
+    run = function() 
+      local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
+      ts_update()
+    end,
+  },
  "kdheepak/lazygit.nvim",
  "nvim-lualine/lualine.nvim",
  "lewis6991/gitsigns.nvim",
