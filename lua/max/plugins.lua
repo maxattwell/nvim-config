@@ -46,4 +46,5 @@ require("lazy").setup({
  "kristijanhusak/vim-dadbod-ui", 
  "dense-analysis/ale", 
  "rest-nvim/rest.nvim", 
+ "dstein64/vim-startuptime",
 }, opts)
