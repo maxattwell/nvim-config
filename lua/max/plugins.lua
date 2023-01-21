@@ -28,7 +28,12 @@ require("lazy").setup({
  "goolord/alpha-nvim",
  "ahmedkhalf/project.nvim", 
  "windwp/nvim-autopairs",
- "numToStr/Comment.nvim",
+{
+      "numToStr/Comment.nvim",
+      config = function()
+	  require('Comment').setup()
+      end
+  },
  "tpope/vim-dadbod", 
  "kristijanhusak/vim-dadbod-ui", 
  "dense-analysis/ale", 
