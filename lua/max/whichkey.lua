@@ -36,12 +36,7 @@ whichkey.register({
     h = {"<cmd>ToggleTerm direction=horizontal<cr>", "Horizontal" },
     v = {"<cmd>ToggleTerm size=100 direction=vertical<cr>", "Vertical" },
   },
-  p = {
-    name = "Packer",
-    s = {"<cmd>PackerSync<cr>", "Sync"},
-    i = {"<cmd>PackerInstall<cr>", "Install"},
-    c = {"<cmd>PackerClean<cr>", "Clean"},
-  },
+  p = {"<cmd>Lazy<cr>", "Lazy Plugins"},
   r = {
     name = "Rest",
     r = {"<Plug>RestNvim", "Run Request"},
