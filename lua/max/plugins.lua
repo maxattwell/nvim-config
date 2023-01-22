@@ -13,7 +13,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
  "nvim-lua/plenary.nvim", 
- "morhetz/gruvbox",
  "ellisonleao/gruvbox.nvim",
  "lunarvim/darkplus.nvim",
  "catppuccin/nvim",
@@ -44,7 +43,6 @@ require("lazy").setup({
   },
  "tpope/vim-dadbod", 
  "kristijanhusak/vim-dadbod-ui", 
- "dense-analysis/ale", 
  "rest-nvim/rest.nvim", 
- "dstein64/vim-startuptime",
+  "neovim/nvim-lspconfig",
 }, opts)
