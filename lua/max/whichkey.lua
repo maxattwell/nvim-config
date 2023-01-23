@@ -26,9 +26,9 @@ whichkey.register({
   e = {"<cmd>NvimTreeFindFileToggle<cr>", "Explorer" },
   f = {
     name = "Finder",
-    f = {"<cmd>Telescope find_files theme=dropdown<cr>", "Find File" },
-    b = {"<cmd>Telescope buffers theme=dropdown<cr>", "Find Buffer" },
-    g = {"<cmd>Telescope live_grep theme=dropdown<cr>", "Live Grep" },
+    f = {"<cmd>Telescope find_files<cr>", "Find File" },
+    b = {"<cmd>Telescope buffers<cr>", "Find Buffer" },
+    g = {"<cmd>Telescope live_grep<cr>", "Live Grep" },
   },
   t = {
     name = "ToggleTerm",
