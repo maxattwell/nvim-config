@@ -10,8 +10,10 @@ end
 function toggleDarkMode()
   if (vim.o.background == "light")
   then
+    -- vim.cmd(["set background=dark"])
     vim.cmd("set background=dark")
   else
+    -- vim.cmd(["set background=light"])
     vim.cmd("set background=light")
   end
 end
