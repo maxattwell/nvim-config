@@ -56,4 +56,9 @@ require("lazy").setup({
   --  For ultisnips users.
   'SirVer/ultisnips',
   'quangnguyen30192/cmp-nvim-ultisnips',
+
+  -- transparent background
+  'xiyaowong/nvim-transparent',
+
+  -- 'ggandor/lightspeed.nvim'
 }, opts)

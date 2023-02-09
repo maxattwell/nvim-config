@@ -1,4 +1,6 @@
-local colorscheme = "darkplus"
+-- local colorscheme = "darkplus"
+local colorscheme = "gruvbox"
+vim.cmd("TransparentEnable")
 
 -- vim.o.background = "light" -- or "light" for light mode for gruvbox
 

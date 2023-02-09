@@ -10,10 +10,8 @@ end
 function toggleDarkMode()
   if (vim.o.background == "light")
   then
-    -- vim.cmd(["set background=dark"])
     vim.cmd("set background=dark")
   else
-    -- vim.cmd(["set background=light"])
     vim.cmd("set background=light")
   end
 end
@@ -27,10 +25,11 @@ whichkey.register({
   g = {"<cmd>LazyGit<cr>", "Git" },
   e = {"<cmd>NvimTreeFindFileToggle<cr>", "Explorer" },
   f = {
-    name = "Finder",
+    name = "File",
     f = {"<cmd>Telescope find_files<cr>", "Find File" },
     b = {"<cmd>Telescope buffers<cr>", "Find Buffer" },
     g = {"<cmd>Telescope live_grep<cr>", "Live Grep" },
+    s = {"<cmd>w<cr>", "Save File"},
   },
   t = {
     name = "ToggleTerm",
@@ -53,10 +52,10 @@ whichkey.register({
   c = {
     name = "Color Scheme",
     g = {"<cmd>colorscheme gruvbox<cr>", "Gruvbox"},
-    d = {"<cmd>colorscheme darkplus<cr>", "Darkplus"},
+    v = {"<cmd>colorscheme darkplus<cr>", "Darkplus"},
     c = {"<cmd>colorscheme catppuccin<cr>", "Catppuccin"},
-    t = {toggleDarkMode, "Toggle Dark Mode"},
-    b = {removeBackground, "Remove background"},
+    d = {toggleDarkMode, "Toggle Dark Mode"},
+    t = {"<cmd>TransparentToggle<cr>", "Toggle transparency"},
   },
 }
   , { prefix = "<leader>" })
