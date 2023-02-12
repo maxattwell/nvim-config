@@ -60,5 +60,5 @@ require("lazy").setup({
   -- transparent background
   'xiyaowong/nvim-transparent',
 
-  -- 'ggandor/lightspeed.nvim'
+  'ggandor/lightspeed.nvim'
 }, opts)
